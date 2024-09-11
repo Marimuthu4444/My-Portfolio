@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mari Muthu. D - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some basic styles */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f4f8;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header and navigation styles */
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header p, header a {
+            margin-top: 5px;
+            color: #fff;
+            text-decoration: none;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Profile section */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-right: 30px;
+            width: 180px;
+            height: 180px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .profile div {
+            max-width: 600px;
+        }
+
+        /* Content sections */
+        .content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        .content.experience {
+            background-color: #e0f7fa;
+        }
+
+        .content.education {
+            background-color: #ffe0b2;
+        }
+
+        .content.achievements {
+            background-color: #d1c4e9;
+        }
+
+        h2 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #003366;
+        }
+
+        .small-img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: #fff;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes vanish {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile img {
+                margin: 0 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mari Muthu. D</h1>
+        <p>Email: <a href="mailto:dmmuthu44@gmail.com">dmmuthu44@gmail.com</a> | Phone: 735-868-6743</p>
+        <p><a href="https://www.linkedin.com/in/maari-d-125222257/" target="_blank">LinkedIn Profile</a></p>
+    </header>
+
+    <div class="container">
+        <div class="profile">
+            <img src="file:///C:/Mine's/Personal%20Documents/WhatsApp%20Image%202024-07-29%20at%2010.49.23%20AM.jpeg" alt="Profile Picture">
+            <div>
+                <h2>OBJECTIVE</h2>
+                <p>As an experienced IT Recruiter & Documentation specialist holding a BSc in Computer Science, I aim to pivot towards IT roles. Seeking opportunities to apply my skills and knowledge in a hands-on capacity, I aspire to contribute positively to organizational objectives.</p>
+            </div>
+        </div>
+
+        <div class="content experience">
+            <h2><i class="fas fa-briefcase icon"></i>PROFESSIONAL SUMMARY</h2>
+            <ul>
+                <li><strong>IT Recruiter & Documentation specialist - Devcare Solutions Inc</strong> (Jan 2024 – Present)<br>
+                    <img src="https://via.placeholder.com/40" alt="Company Logo" class="small-img">• Led end-to-end IT recruitment and documented US IT professionals using MS Office tools and Document Development Life Cycle (DDLC) methodologies.<br>
+                    <img src="https://via.placeholder.com/40" alt="User Guide" class="small-img">• Authored the User Guide for the Recruitment Tracking System (RTS) using DITA XML for structured and modular documentation.<br>
+                    <img src="https://via.placeholder.com/40" alt="Feedback" class="small-img">• The RTS USER Guide detailing installation, configuration, troubleshooting, and user manual procedures.<br>
+                    <img src="https://via.placeholder.com/40" alt="Feedback" class="small-img">• Collected feedback from RTS application users and enabled the development team to enhance the software for improved usability and innovation.<br>
+                    <img src="https://via.placeholder.com/40" alt="Collaboration" class="small-img">• Collaborated with Business Analysts and Hiring Managers from Michigan and other US states to gather requirements and write effective job descriptions tailored to their needs.<br>
+                    <img src="https://via.placeholder.com/40" alt="Networking" class="small-img">• Connected with various IT professionals, including Project Managers, Business Analysts, Developers, Testers, Writers, and Support Engineers across the USA, supporting their placement and career growth.<br>
+                    <img src="https://via.placeholder.com/40" alt="Database" class="small-img">• Coordinated with candidates and clients through email and VOIP communication, ensuring timely updates, effective information exchange, and seamless recruitment processes.<br>
+                    <img src="https://via.placeholder.com/40" alt="Database" class="small-img">• Managed and maintained a database of hired candidates using Document Development Life Cycle (DDLC) methodologies.<br>
+                    <img src="https://via.placeholder.com/40" alt="Database" class="small-img">• Maintained a detailed database of candidates’ resumes, contact information, designations, and addresses, along with a record of vendor details across the USA.</li>
+                <li><strong>IT Recruiter & Documentation specialist - Av-tech Solutions Inc</strong> (Aug 2022 – Dec 2023)<br>
+                    <img src="https://via.placeholder.com/40" alt="Company Logo" class="small-img">• Responsible for managing the end-to-end recruiting lifecycle and maintaining a database of US IT professionals.<br>
+                    <img src="https://via.placeholder.com/40" alt="Training" class="small-img">• Trained for the first six months with professionals to enhance communication skills, US accent, English grammar, and MS Office documentation.<br>
+                    <img src="https://via.placeholder.com/40" alt="DITA XML" class="small-img">• Acquired foundational knowledge in DITA XML and Oxygen XML Author; utilized these tools for creating user guides.<br>
+                    <img src="https://via.placeholder.com/40" alt="HRMS" class="small-img">• Created the User Manual for HRMS (Human Resource Management Software) for Avtech, including installation, configuration, troubleshooting, data analytics, and candidate tracking.<br>
+                    <img src="https://via.placeholder.com/40" alt="Collaboration" class="small-img">• Connected with hiring managers to understand client IT requirements and wrote job descriptions tailored to their needs.<br>
+                    <img src="https://via.placeholder.com/40" alt="Documentation" class="small-img">• Planned, created, and maintained technical documentation for internal and external recruiters.<br>
+                    <img src="https://via.placeholder.com/40" alt="AI Tools" class="small-img">• Utilized AI tools like ChatGPT and Gemini to write tailored and engaging job descriptions by analyzing industry-specific keywords and requirements.<br>
+                    <img src="https://via.placeholder.com/40" alt="Resumes" class="small-img">• Wrote, crafted, and formatted resumes for IT professionals, emphasizing key skills and achievements to enhance their appeal to potential employers.<br>
+                    <img src="https://via.placeholder.com/40" alt="Knowledge" class="small-img">• Gained comprehensive knowledge of various IT roles, from support level to project management level, throughout the recruitment process.<br>
+                    <img src="https://via.placeholder.com/40" alt="Knowledge" class="small-img">• Acquired a broad understanding of technologies and methodologies such as SDLC, DDLC, Agile, System Support & Administration, ITSM, and ITIL.</li>
+                <li><strong>Loan Data Entry Staff - Reliable Data</strong> (May 2022 – Jul 2022)<br>
+                    <img src="https://via.placeholder.com/40" alt="Data Entry" class="small-img">• Entered customer and account data from source documents within time limits.<br>
+                    <img src="https://via.placeholder.com/40" alt="Accuracy" class="small-img">• Compiled, verified accuracy, and sorted information to prepare source data for computer entry.<br>
+                    <img src="https://via.placeholder.com/40" alt="Reviewing" class="small-img">• Reviewed data for deficiencies or errors, corrected any incompatibilities, and checked output.<br>
+                    <img src="https://via.placeholder.com/40" alt="Verification" class="small-img">• Involved in basic documents verifications like PAN Card, Aadhaar card, Bill statements.<br>
+                    <img src="https://via.placeholder.com/40" alt="Microsoft Office" class="small-img">• Used Microsoft Office tools like MS Excel, MS Word, etc.</li>
+            </ul>
+        </div>
+
+        <div class="content education">
+            <h2><i class="fas fa-graduation-cap icon"></i>EDUCATION DETAILS</h2>
+            <p>B.Sc. in Computer Science (Overall: 80%)<br>Guru Nanak College of Autonomous, Chennai (2019 to 2022)</p>
+            <p>HSC - Higher Secondary Certified (Class 12th)<br>SHN-Edward Higher Secondary School, Sattur (2018 to 2019)</p>
+            <p>SSC - Secondary School Certified (Class 10th)<br>SHN-Edward Higher Secondary School, Sattur (2016 to 2017)</p>
+        </div>
+
+        <div class="content achievements">
+            <h2><i class="fas fa-trophy icon"></i>ACHIEVEMENTS</h2>
+            <ul>
+                <li>Got best beginner Certificate from Avtech Solution for the highest number of candidate submissions.</li>
+                <li>College-level Theatre artist participated in many theatrical events like MIME, Ad zap, Street play, Mono act, Singing, etc.</li>
+                <li>District-level Under 19 Cricketer.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Mari Muthu. D. All rights reserved.</p>
+    </footer>
+</body>
+</html>
